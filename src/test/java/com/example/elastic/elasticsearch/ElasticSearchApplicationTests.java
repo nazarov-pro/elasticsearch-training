@@ -29,6 +29,7 @@ public class ElasticSearchApplicationTests {
     @Autowired
     private SalesService salesService;
 
+    //TODO: change "sales_records.csv" file name after extracting "1500000_Sales_Records.7z"
     @Test
     public void feedElastic() throws IOException {
         Path path = Paths.get("src/test/resources/sales_records.csv");
